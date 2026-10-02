@@ -1,4 +1,4 @@
-- [x] SUB-TASK T-02A: Tokens & Reset
-- [x] SUB-TASK T-02B: Responsive Grid
-- [x] SUB-TASK T-02C: Theme Engine
-
+- [x] EXERCISE 3: Component Architecture & State Modeling
+  - [x] T-03A: Modular HTML Component Architecture
+  - [x] T-03B: Categorized Badges & Project Cards CSS Grid
+  - [x] T-03C: Theme Switcher State Modeling (A11y & Icons)
