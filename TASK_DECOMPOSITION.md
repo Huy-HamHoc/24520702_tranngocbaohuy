@@ -1,4 +1,4 @@
-- [x] EXERCISE 3: Component Architecture & State Modeling
-  - [x] T-03A: Modular HTML Component Architecture
-  - [x] T-03B: Categorized Badges & Project Cards CSS Grid
-  - [x] T-03C: Theme Switcher State Modeling (A11y & Icons)
+- [x] EXERCISE 4: Resilient Component Architecture
+  - [x] SUB-TASK T-03A: Loading Skeleton (Pure CSS Shimmer gradient)
+  - [ ] SUB-TASK T-03B: Live Data State (Flexbox metadata badges & Grid list)
+  - [ ] SUB-TASK T-03C: Empty & Error States with accessible retry trigger
