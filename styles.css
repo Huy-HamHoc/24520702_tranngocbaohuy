@@ -140,4 +140,57 @@ nav a {
   0% { background-position: 200% 0; }
   100% { background-position: -200% 0; }
 }
+/* SUB-TASK T-03B: Live Data State Design */
+.metadata-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.badge-tech {
+  background-color: var(--accent-color);
+}
+
+.badge-status {
+  background-color: #10b981; /* Màu xanh lá biểu thị trạng thái live */
+  color: white;
+}
+
+.project-card p {
+  margin: 12px 0;
+  line-height: 1.5;
+  color: var(--text-primary);
+  opacity: 0.9;
+}
+/* SUB-TASK T-03C: Empty & Error States Design */
+.status-message {
+  text-align: center;
+  padding: 40px 20px;
+  border: 2px dashed #94a3b8;
+  border-radius: 8px;
+  background-color: var(--nav-bg);
+}
+
+.error-state .status-message {
+  border-color: #ef4444; /* Viền đỏ cảnh báo lỗi */
+}
+
+.btn-retry {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-retry:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-retry:focus-visible {
+  outline: 3px solid #93c5fd; /* Đường viền focus rõ ràng phục vụ A11y */
+}
 

@@ -74,3 +74,20 @@
         </article>
       </div>
     </section>
+
+          <!-- SUB-TASK T-03C: Empty State (Hiển thị khi không có dự án nào) -->
+      <div class="projects-container empty-state" style="display: none;">
+        <div class="status-message" role="status">
+          <p>No projects available at the moment. Check back later!</p>
+        </div>
+      </div>
+
+      <!-- SUB-TASK T-03C: Error State (Hiển thị khi lỗi kết nối, kèm nút Retry tiếp cận tốt) -->
+      <div class="projects-container error-state" style="display: none;">
+        <div class="status-message" role="alert" aria-live="assertive">
+          <p>Failed to load projects due to a network connection error.</p>
+          <button id="retry-btn" class="btn-retry" aria-label="Retry loading projects">
+            🔄 Retry Loading
+          </button>
+        </div>
+      </div>
