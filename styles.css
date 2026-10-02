@@ -193,4 +193,31 @@ nav a {
 .btn-retry:focus-visible {
   outline: 3px solid #93c5fd; /* Đường viền focus rõ ràng phục vụ A11y */
 }
+/* DESIGN FOR AVATAR IN ABOUT SECTION */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50% !important; /* Ép buộc bo tròn thành hình tròn trịa */
+  object-fit: cover !important;  /* Quan trọng: Giữ nguyên tỷ lệ ảnh, cắt góc thừa để không bị méo/bóp dẹt ảnh */
+  border: 4px solid var(--accent-color); /* Thêm viền màu xanh công nghệ quanh ảnh */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng đổ bóng cho ảnh nổi bật lên */
+}
+
+
+/* Khi màn hình lớn hơn (Laptop/Máy tính bảng), ảnh và chữ sẽ nằm ngang */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
 
