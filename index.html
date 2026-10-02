@@ -47,19 +47,30 @@
     <!-- 3. Project Cards (Cấu trúc mẫu từ đề bài) -->
     <section id="projects">
       <h2>My Projects</h2>
-      <div class="projects-container">
+      
+      <!-- Cấu trúc cũ của T-03A: Loading Skeleton -->
+      <div class="projects-container loading-state">
+        <article class="project-card skeleton-card" aria-busy="true" aria-live="polite">
+          <div class="skeleton-item title-skeleton"></div>
+          <div class="skeleton-item text-skeleton"></div>
+          <div class="skeleton-item button-skeleton"></div>
+        </article>
+      </div>
+
+      <!-- SUB-TASK T-03B: Live Data State (Mặc định hiển thị hoặc ẩn tùy ý, ở đây thiết lập class active) -->
+      <div class="projects-container live-data-state">
         <article class="project-card" data-category="frontend">
           <header class="card-header">
-            <h3>Distributed State Engine</h3>
-            <span class="badge">TypeScript</span>
+            <h3>Enterprise Portfolio Dashboard</h3>
+            <div class="metadata-badges">
+              <span class="badge badge-tech">TypeScript</span>
+              <span class="badge badge-status">Production</span>
+            </div>
           </header>
-          <p>Lightweight event bus built without external libraries.</p>
+          <p>A high-performance engineer portfolio architecture built with 100% semantic DOM and zero utility framework overhead.</p>
           <footer class="card-footer">
-            <a href="#" aria-label="View State Engine repository">Source Code</a>
+            <a href="#" aria-label="View Portfolio source code">Source Code</a>
           </footer>
         </article>
       </div>
     </section>
-  </main>
-</body>
-</html>
