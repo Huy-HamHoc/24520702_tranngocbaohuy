@@ -1,0 +1,43 @@
+ /* CSS TOKENS & RESET */
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #111827;
+  --accent-color: #2563eb;
+  --nav-bg: #f3f4f6;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #111827;
+  --text-primary: #f9fafb;
+  --accent-color: #3b82f6;
+  --nav-bg: #1f2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: system-ui, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Skip link ẩn, hiện khi Tab */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--accent-color);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
